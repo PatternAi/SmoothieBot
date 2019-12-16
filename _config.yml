@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Smoothie Bot
 description: EECS 106A Final Project
-author: Bryan Chen, Emily Huynh, Albert Loekman, Brent Sienko, Eric Zhong
+author: Author
 baseurl: '/smoothiebot' # the subpath of your site, e.g. /blog
 url: 'https://brentsienko.github' # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
