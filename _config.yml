@@ -27,12 +27,8 @@ search_enabled: true
 heading_anchors: true
 permalink: pretty
 nav_links:
-  Okpy:
-    - 'https://okpy.org'
-  Gradescope:
-    - 'https://gradescope.com'
-  Piazza:
-    - 'https://piazza.com'
+  Course Website:
+    - 'https://ucb-ee106.github.io/ee106a-fa19/'
 aux_links:
   'Kevin Lin':
     - 'https://kevinl.info'
@@ -44,7 +40,6 @@ nav_footer_content: "Powered by <a href=\"https://github.com/kevinlin1/just-the-
 # Collections for website data
 collections:
   - modules
-  - announcements
   - staffers
 # Default layouts for each collection type
 defaults:
@@ -53,11 +48,6 @@ defaults:
       type: modules
     values:
       layout: module
-  - scope:
-      path: ''
-      type: announcements
-    values:
-      layout: announcement
   - scope:
       path: ''
       type: staffers
