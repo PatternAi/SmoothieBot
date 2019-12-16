@@ -6,4 +6,4 @@ website: https://brentsienko.github.io
 photo: 
 ---
 
-I like teaching Computer Science!
+EECS
