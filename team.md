@@ -14,10 +14,5 @@ description: A listing of project members
   {% endfor %}
 </div>
 
-img.one {
-  height: 50%;
-  width: 50%;
-}
-
 # Team
-<img  class="one" src="../pictures/team.jpg" alt="Team Photo"/>
+<img width class="one" src="../pictures/team.jpg" alt="Team Photo"/>
