@@ -15,4 +15,4 @@ description: A listing of project members
 </div>
 
 # Team
-<img src="pictures/team.jpg" alt="Team Photo"/>
+<img src="../pictures/team.jpg" alt="Team Photo"/>
