@@ -6,7 +6,7 @@ description: >-
     Team members
 ---
 
-# Overview
+# Team
 {:.no_toc}
 
 ## Table of contents
