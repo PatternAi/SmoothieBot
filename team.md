@@ -4,9 +4,7 @@ title: Team
 nav_order: 3
 description: A listing of project members
 ---
-# Team
----
-<img width="378" height="284" class="one" src="../pictures/team.jpg" alt="Team Photo"/>
+<img width="508" height="378" class="one" src="../pictures/team.jpg" alt="Team Photo"/>
 
 # Team Members
 ---
