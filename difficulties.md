@@ -6,7 +6,7 @@ description: >-
     Difficulties of smoothiebot project
 ---
 
-# Overview
+# Difficulties
 {:.no_toc}
 
 ## Table of contents
