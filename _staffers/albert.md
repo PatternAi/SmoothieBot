@@ -6,4 +6,4 @@ website: albert.website.idk
 photo: 
 ---
 
-Hi, I'm Albert!
+IEOR, EECS minor
