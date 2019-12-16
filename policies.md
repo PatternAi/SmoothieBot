@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Policies
+title: Overview
 nav_order: 1
 description: >-
-    Course policies and information.
+    Overview of smoothiebot project
 ---
 
-# Policies
+# Overview
 {:.no_toc}
 
 ## Table of contents
