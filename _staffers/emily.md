@@ -6,4 +6,4 @@ website: emily.website.idk
 photo: 
 ---
 
-Hi, I'm Emily
+BioE, EECS minor
