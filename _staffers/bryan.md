@@ -6,4 +6,4 @@ website: bryan.website.idk
 photo: 
 ---
 
-Hi, I'm Bryan!
+Mechanical Engineer, EECS minor
