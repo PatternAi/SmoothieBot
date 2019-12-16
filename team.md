@@ -15,4 +15,4 @@ description: A listing of project members
 </div>
 
 # Team
-<img width='1008' height='756' class="one" src="../pictures/team.jpg" alt="Team Photo"/>
+<img width="504" height="378" class="one" src="../pictures/team.jpg" alt="Team Photo"/>
