@@ -12,19 +12,12 @@ description: >-
 EECS 106A, Fall 2019 
 {: .mb-0 .fs-6 .text-grey-dk-000 }
 
-{% assign instructors = site.staffers | where: 'role', 'Project Group' %}
+{% assign instructors = site.staffers | where: 'role', 'Team Member' %}
 <div class="role">
   {% for staffer in instructors %}
   {{ staffer }}
   {% endfor %}
 </div>
-
-{% if site.announcements %}
-{{ site.announcements.last }}
-<a href="{{ site.baseurl }}/announcements" class="btn btn-outline fs-3">
-  All Announcements
-</a>
-{% endif %}
 
 ## Smoothie Bot
 
