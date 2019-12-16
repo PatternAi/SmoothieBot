@@ -1,9 +1,9 @@
 ---
-name: Team
-role: Project Group
-email: me@example.com
-website: https://kevinl.info
-photo: https://kevinl.info/assets/images/me.png
+name: Brent Sienko
+role: Team Member
+email: brent5@berkeley.edu
+website: https://brentsienko.github.io
+photo: 
 ---
 
 I like teaching Computer Science!
