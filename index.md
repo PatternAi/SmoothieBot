@@ -12,7 +12,7 @@ description: >-
 EECS 106A, Fall 2019 
 {: .mb-0 .fs-6 .text-grey-dk-000 }
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/brentsienko/SmoothieBot/pictures/team.jpg "Team Photo")
 
 {% assign instructors = site.staffers | where: 'role', 'Team Member' %}
 <div class="role">
