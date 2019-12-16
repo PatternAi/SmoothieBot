@@ -6,7 +6,7 @@ description: >-
     Rundown of how we completed the project
 ---
 
-# Overview
+# How
 {:.no_toc}
 
 ## Table of contents
