@@ -6,4 +6,4 @@ website: https://eric.website.idk
 photo: https://eric.website.idk
 ---
 
-Hi, I'm Eric!
+Energy Engineering, EECS minor
