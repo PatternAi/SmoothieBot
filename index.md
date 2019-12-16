@@ -12,7 +12,7 @@ description: >-
 EECS 106A, Fall 2019 
 {: .mb-0 .fs-6 .text-grey-dk-000 }
 
-{% assign instructors = site.staffers | where: 'role', 'Team' %}
+{% assign instructors = site.staffers | where: 'role', 'Teacher' %}
 <div class="role">
   {% for staffer in instructors %}
   {{ staffer }}
