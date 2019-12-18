@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Difficulties
-nav_order: 3
+title: Adittional Materials
+nav_order: 7
 description: >-
-    Difficulties of smoothiebot project
+    Additional Materials of smoothiebot project
 ---
 
-# Difficulties
+# Additional Materials
 {:.no_toc}
 
 ## Table of contents
