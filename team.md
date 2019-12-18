@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Team
-nav_order: 3
+nav_order: 6
 description: A listing of project members
 ---
 
