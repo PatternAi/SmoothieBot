@@ -2,7 +2,7 @@
 name: Bryan Chen
 role: Team Member
 email: bryanchen4@berkeley.edu
-website: bryan.website.idk
+website: https://bryanchen4.github.io/
 photo: 
 ---
 
