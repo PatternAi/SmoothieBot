@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Overview
+title: Introduction
 nav_order: 1
 description: >-
     Overview of smoothiebot project
 ---
 
-# Overview
+# Introduction
 {:.no_toc}
 
 ## Table of contents
