@@ -14,4 +14,6 @@ description: A listing of project members
   {% endfor %}
 </div>
 
+---
+
 <img class="one" src="../pictures/team.jpg" alt="Team Photo"/>
