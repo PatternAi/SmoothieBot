@@ -1,12 +1,12 @@
 ---
 layout: page
-title: How
+title: Design
 nav_order: 2
 description: >-
     Rundown of how we completed the project
 ---
 
-# How
+# Design
 {:.no_toc}
 
 ## Table of contents
