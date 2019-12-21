@@ -8,3 +8,5 @@ photo: https://brentsienko.github.io/SmoothieBot/pictures/ericheadshot.jpg
 ---
 
 Energy Engineering, EECS minor
+
+clustering, classification, transforms, path planning, gripper actuation
