@@ -26,3 +26,5 @@ As seen in the video, the SmoothieBot begins by prompting the user for a recipe 
 
 [![demo](https://img.youtube.com/vi/gyzpliYOKKU/0.jpg)](https://www.youtube.com/watch?v=gyzpliYOKKU)
 
+[![demo](https://img.youtube.com/vi/VEV4oVUFBEc/0.jpg)](https://www.youtube.com/watch?v=VEV4oVUFBEc)
+
