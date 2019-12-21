@@ -8,3 +8,5 @@ photo: https://brentsienko.github.io/SmoothieBot/pictures/bryan_headshot.jpg
 ---
 
 Mechanical Engineer, EECS minor
+
+clustering, classification, transforms, path planning, gripper actuation
