@@ -23,7 +23,7 @@ The required design criteria our project must meet includes: identify fruits on 
 
 To implement this, we implemented the following block diagram in our code:
 
-<img src="pictures/blockdiagram.png" alt="Flow Diagram"/>
+<img src="../pictures/blockdiagram.png" alt="Flow Diagram"/>
 
 To first start the system, we decided retrieving the transforms was critical to picking and placing the fruit. This consisted of finding the transforms between the RealSense and the table and between the table and Baxter’s ‘base’ frame. We could now place the fruit anywhere in view of the RealSense camera, which would get the point clouds of the fruits using the depth camera, then chain and apply these transforms to get our point cloud in the reference frame of baxter. 
 
