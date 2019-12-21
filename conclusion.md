@@ -12,23 +12,30 @@ description: >-
 ## Table of contents
 {: .no_toc .text-delta }
 
-1. TOC
+1. Summary
+2. Difficulties
+3. Future Improvements
+
 {:toc}
 
 ---
 
-## About
+## Summary
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a diam. Erat nam at lectus urna duis convallis convallis tellus id. Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Ultrices vitae auctor eu augue ut lectus arcu. Morbi tristique senectus et netus et malesuada. Turpis tincidunt id aliquet risus feugiat in ante. Consequat interdum varius sit amet mattis vulputate enim nulla. Felis eget nunc lobortis mattis aliquam. Eu non diam phasellus vestibulum lorem sed risus. A condimentum vitae sapien pellentesque habitant morbi tristique. Orci dapibus ultrices in iaculis nunc sed augue lacus viverra. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Dictum varius duis at consectetur lorem donec massa sapien. Blandit cursus risus at ultrices mi tempus imperdiet. Laoreet sit amet cursus sit amet dictum sit amet justo. Felis eget nunc lobortis mattis aliquam faucibus. Nam aliquam sem et tortor consequat.
+Overall, the project was successful in that, after a recipe was input by the user, Baxter was able to independently recognize the fruits on the table, pick them up, move them to the blender, and close the blender lid. Looking at the captured point clouds, it was clear that the project was accurate in transforming the points and filtering out the table. The classification system was also quite effective, able to accurately recognize the fruit placed in front of the camera, given that the RealSense was appropriately positioned not too far away.
 
-## Lecture
+## Difficulties
 
-Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Vulputate dignissim suspendisse in est ante in. Massa vitae tortor condimentum lacinia quis vel. Gravida neque convallis a cras semper auctor. Pellentesque eu tincidunt tortor aliquam nulla. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Sit amet purus gravida quis blandit turpis cursus in. Porttitor leo a diam sollicitudin tempor. Vel facilisis volutpat est velit egestas dui id ornare. Cum sociis natoque penatibus et magnis. Tristique magna sit amet purus gravida. Nibh sit amet commodo nulla facilisi nullam vehicula. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Id semper risus in hendrerit gravida. Sit amet justo donec enim diam vulputate ut pharetra sit. Vitae justo eget magna fermentum. Tellus in metus vulputate eu. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Etiam erat velit scelerisque in dictum non consectetur a erat. Pellentesque eu tincidunt tortor aliquam nulla.
+We noticed that despite calibrating the robot with offset values to pick up the fruit at the centroid, the robot would seem to be offset by different values each time we restarted our work (ie coming back to work on another day). We realized that we needed to standardize the position of the Baxter’s non gripper hand (in our case, left hand camera) as well as the position of the RealSense relative to the table AR tag in order to achieve replicable results. We achieved this by designating an initialization position and calculating the joint angles for us to use during the initialization sequence. We also standardized our placement of the RealSense relative to the AR tag.
 
-## Resources
+In addition, we noticed that between different robots: Ayrton and Archytas for example, that the tf_frame convention was different. On ayrton, frames were named as “reference/left_hand camera” as opposed to just “left_hand_camera.” By analysis of the tf_frame diagram and executing a static transform publisher, we were able to resolve this.
 
-Lacus viverra vitae congue eu. Suspendisse in est ante in nibh mauris cursus mattis. Nisl vel pretium lectus quam id leo in. Euismod lacinia at quis risus sed vulputate odio. Non enim praesent elementum facilisis. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer. Id interdum velit laoreet id donec ultrices tincidunt arcu. Urna molestie at elementum eu facilisis sed odio. Auctor urna nunc id cursus metus aliquam eleifend. Volutpat commodo sed egestas egestas fringilla phasellus. Libero nunc consequat interdum varius sit amet mattis. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque. Tortor vitae purus faucibus ornare suspendisse. Auctor elit sed vulputate mi.
+Finding the centroid for fruits with complex shapes was also more complicated than expected. In reality, we didn’t really want the exact centroid, we wanted the position above the table that would be the ideal spot to grab the fruit. For spherical fruits this was the same as the centroid. For a curved banana, however, the centroid would have actually been offset from the ideal gripping point of the banana (and possibly even outside of the banana if it was curved enough). To account for this, from the pointcloud, we first found each point’s average value along the first principal component and took points that were within a range of values close to the average. From those points, we found their value when projected onto the second principal component, took the average, and ultimately converted this to an x, y position which we used as the banana’s centroid.
 
-## Assignments
 
-Vehicula ipsum a arcu cursus vitae congue. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Risus sed vulputate odio ut enim blandit. Aliquam id diam maecenas ultricies mi eget. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Eget mi proin sed libero enim sed faucibus. Sem integer vitae justo eget magna fermentum iaculis. In mollis nunc sed id semper risus in. Sit amet risus nullam eget felis eget. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero id. At varius vel pharetra vel turpis nunc eget. Scelerisque purus semper eget duis at tellus.
+## Future Improvements
+
+The grabbing motion was not as versatile as we had initially hoped for. The robot is able to successfully move its gripper above the desired fruit and reach down to grab it. However, some fruits must be grabbed at a certain orientation in order to fit in the gripper. For example, a banana cannot be grasped length-wise. To fix this, we made sure to orient the fruit such that the gripper could more easily grab them. We did preliminary work using PCA to find the angle of the fruit’s first principal component relative to the table AR tag (which could then be used to set the joint angle of Baxter’s gripper) but unfortunately did not get around to testing this before the demo. Further improvements can be made to enable Baxter to pick up fruit not only from a top down position, but also to approach fruits from the side. This however, would also require work on collision detection, such that Baxter’s planned path doesn’t collide with other fruits or the blender.
+
+Another idea is to design and 3D print hardware that would enable baxter to consistently grip the lid and seal the blender, as opposed to using parallel grippers which causes the lid to swing during movement. Additional work on the lid closing program can also be done to ensure a sufficiently tight seal.
+
