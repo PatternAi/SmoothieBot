@@ -7,6 +7,6 @@ website: https://bryanchen4.github.io/
 photo: https://brentsienko.github.io/SmoothieBot/pictures/bryan_headshot.jpg
 ---
 
-Mechanical Engineer, EECS minor
+**Mechanical Engineer, EECS minor**
 
-clustering, classification, transforms, path planning, gripper actuation
+-clustering, classification, transforms, path planning, gripper actuation
