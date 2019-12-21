@@ -8,3 +8,5 @@ photo: https://brentsienko.github.io/SmoothieBot/pictures/brentheadshotnew.png
 ---
 
 EECS
+
+clustering, classification, path planning, gripper actuation
