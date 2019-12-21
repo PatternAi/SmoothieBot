@@ -8,3 +8,5 @@ photo: https://brentsienko.github.io/SmoothieBot/pictures/emilyheadshot.png
 ---
 
 BioE, EECS minor
+
+point cloud processing and analysis, transforms, path planning, gripper actuation
