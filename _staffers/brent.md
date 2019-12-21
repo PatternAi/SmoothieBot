@@ -7,6 +7,6 @@ website: https://brentsienko.github.io
 photo: https://brentsienko.github.io/SmoothieBot/pictures/brentheadshotnew.png
 ---
 
-EECS
+**EECS**
 
-clustering, classification, path planning, gripper actuation
+-clustering, classification, transforms, path planning, gripper actuation
