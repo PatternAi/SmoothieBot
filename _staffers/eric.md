@@ -7,6 +7,6 @@ website: http://tinyurl.com/ericzhong
 photo: https://brentsienko.github.io/SmoothieBot/pictures/ericheadshot.jpg
 ---
 
-Energy Engineering, EECS minor
+**Energy Engineering, EECS minor**
 
-clustering, classification, transforms, path planning, gripper actuation
+-clustering, classification, transforms, path planning, gripper actuation
