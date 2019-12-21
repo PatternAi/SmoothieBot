@@ -15,7 +15,6 @@ description: >-
 1. Summary
 2. Difficulties
 3. Future Improvements
-
 {:toc}
 
 ---
