@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Adittional Materials
+title: Additional Materials
 nav_order: 7
 description: >-
     Additional Materials of smoothiebot project
